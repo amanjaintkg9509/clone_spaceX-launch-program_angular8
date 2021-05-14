@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  background: #e1e0e0 !important;
+}
+
+.bg-color-white {
+  background: white;
+}
+
+.f-dis {
+  display: flex;
+}
+
+.f-dis-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}

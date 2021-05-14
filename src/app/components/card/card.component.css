@@ -1,0 +1,25 @@
+.card {
+  width: 16rem;
+  margin: 0 10px 12px;
+}
+
+.card-title {
+  color: #5a62b9;
+  ;
+}
+
+b {
+  color: black;
+}
+
+.card-img-top {
+  background: #e2e2e3;
+}
+
+.pad-30 {
+  padding: 30px;
+}
+
+.card-body {
+  padding-left: 32px;
+}

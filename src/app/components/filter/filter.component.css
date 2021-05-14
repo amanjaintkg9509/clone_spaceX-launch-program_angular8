@@ -1,0 +1,30 @@
+span {
+  margin: 12px;
+  background-color: #bcfba8;
+  color: black;
+  border: none
+}
+
+.center {
+  text-align: center;
+}
+
+h6 {
+  border-bottom: 1px solid;
+}
+
+.b-radius-mar {
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+h4 {
+  padding: 12px;
+  font-weight: 700;
+}
+
+span:hover, .active {
+  color: #050505;
+  background-color: #16bc6f;
+  border-color: #0a53be;
+}

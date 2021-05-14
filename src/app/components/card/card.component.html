@@ -1,0 +1,40 @@
+<div class="row">
+  <app-filter class="col-sm-3"></app-filter>
+  <div class="f-dis-wrap card-deck col-sm-9">
+    <div class="card" *ngFor="let data of cardData">
+      <div class="pad-30">
+        <img
+          class="card-img-top"
+          [src]="data?.links?.mission_patch_small"
+          alt="Card image cap"
+        />
+      </div>
+
+      <div class="card-body">
+        <h5 class="card-title">
+          {{ data?.mission_name + " #" + data?.flight_number }}
+        </h5>
+        <!-- <p class="card-text"> -->
+        <div class="card-title">
+          <b>Mission Ids: </b>
+          <ul>
+            <li *ngFor="let ids of data?.mission_id">{{ ids }}</li>
+          </ul>
+        </div>
+        <div class="card-title">
+          <b>Launch Year: </b> {{ data?.launch_year }}
+        </div>
+        <div class="card-title">
+          <b>Successful Launch: </b>{{ data?.launch_success }}
+        </div>
+        <div class="card-title">
+          <b>Successful Landing: </b>{{ data?.launch_success }}
+        </div>
+        <!-- </p> -->
+        <!-- <p class="card-text">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </p> -->
+      </div>
+    </div>
+  </div>
+</div>

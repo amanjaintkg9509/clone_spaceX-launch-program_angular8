@@ -1,0 +1,56 @@
+<aside class="bg-color-white b-radius-mar">
+  <h4>Filters</h4>
+  <div class="center">
+    <h6>Launch Years</h6>
+    <span
+      class="btn btn-primary col-sm-4"
+      *ngFor="let yr of years"
+      (click)="filter('launch_year', yr)"
+      [ngClass]="
+        filterObj && filterObj.launch_year == yr ? 'active' : 'inactive'
+      "
+    >
+      {{ yr }}
+    </span>
+  </div>
+  <div class="center">
+    <h6>Successful Launch</h6>
+    <span
+      class="btn btn-primary col-sm-4"
+      [ngClass]="
+        filterObj && filterObj.land_success == true ? 'active' : 'inactive'
+      "
+      (click)="filter('land_success', true)"
+    >
+      True
+    </span>
+    <span
+      class="btn btn-primary col-sm-4"
+      [ngClass]="
+        filterObj && filterObj.land_success == false ? 'active' : 'inactive'
+      "
+      (click)="filter('land_success', false)"
+    >
+      False
+    </span>
+  </div>
+  <div class="center">
+    <h6>Successful Landing</h6>
+    <span
+      class="btn btn-primary col-sm-4"
+      [ngClass]="
+        filterObj && filterObj.launch_success == true ? 'active' : 'inactive'
+      "
+      (click)="filter('launch_success', true)"
+      >True</span
+    >
+    <span
+      class="btn btn-primary col-sm-4"
+      [ngClass]="
+        filterObj && filterObj.launch_success == false ? 'active' : 'inactive'
+      "
+      (click)="filter('launch_success', false)"
+      >False</span
+    >
+  </div>
+</aside>
