@@ -23,3 +23,9 @@ b {
 .card-body {
   padding-left: 32px;
 }
+
+@media only screen and (max-width: 699px) {
+  .card {
+    width: 100vw;
+  }
+}

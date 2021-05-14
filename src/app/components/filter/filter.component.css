@@ -28,3 +28,9 @@ span:hover, .active {
   background-color: #16bc6f;
   border-color: #0a53be;
 }
+
+@media only screen and (max-width: 699px) {
+  .b-radius-mar {
+    margin: 12px;
+  }
+}
